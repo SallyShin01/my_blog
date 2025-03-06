@@ -1,0 +1,115 @@
+---
+title: "Penguin data  설명"
+format: html
+jupyter: python3
+---
+
+# Penguin data 분석 설명 - 6조
+
+```{python}
+import pandas as pd
+from palmerpenguins import load_penguins
+penguins = load_penguins()
+penguins.info()
+df=penguins
+df
+
+# 종별로 데이터를 나눔!
+gentoo = penguins[penguins['species'] == "Gentoo"] # 124개의 데이터
+chinstrap = penguins[penguins['species'] == "Chinstrap"]  # 68개의 데이터
+adelie = penguins[penguins['species'] == "Adelie"]  # 152개 데이터
+
+```
+
+## 각 종별 지느러미 분석
+
+```{python}
+# flipper_length_mm
+
+# 'flipper_length_mm' 컬럼에 대한 describe() 결과
+g_flipper_desc = gentoo['flipper_length_mm'].describe()
+a_flipper_desc = adelie['flipper_length_mm'].describe()
+c_flipper_desc = chinstrap['flipper_length_mm'].describe()
+
+# 평균, 최대값, 최소값 추출
+mean_val = g_flipper_desc['mean']
+max_val = g_flipper_desc['max']
+min_val = g_flipper_desc['min']
+
+mean_val_a = a_flipper_desc['mean']
+max_val_a = a_flipper_desc['max']
+min_val_a = a_flipper_desc['min']
+
+mean_val_c = c_flipper_desc['mean']
+max_val_c = c_flipper_desc['max']
+min_val_c = c_flipper_desc['min']
+
+# gentoo
+print(f"Gentoo의 flipper_length의 평균: {mean_val}, 최대값: {max_val}, 최소값: {min_val}")
+
+# adelie
+print(f"Adelie의 flipper_length의 평균: {mean_val_a}, 최대값: {max_val_a}, 최소값: {min_val_a}")
+
+# chinstrap
+print(f"Chinstrap의 flipper_length의 평균: {mean_val_c}, 최대값: {max_val_c}, 최소값: {min_val_c}")
+
+
+```
+
+|                    | Gentoo  | Adelie  | Chinstrap |
+|--------------------|---------|---------|-----------|
+| 평균 지느러미 길이 | 217.187 | 189.954 | 195.824   |
+| 최대 지느러미 길이 | 231     | 210     | 212       |
+| 최소 지느러미 길이 | 203     | 172     | 178       |
+
+### 지느러미 분석 결과
+
+-   평균적으로 보았을때, Gentoo가 보통 가장 긴 지느러미 길이를 가지고 있다.
+
+-   최대 지느러미 길이 역시 Gentoo가 가지고 있다.
+
+-   가장 짧은 지느러미 길이를 가지고 있는 종은 Adelie이다.
+
+## 각 종별 몸무게 분석
+
+```{python}
+# body_mass_g
+g_body_desc = gentoo['body_mass_g'].describe()
+a_body_desc = adelie['body_mass_g'].describe()
+c_body_desc = chinstrap['body_mass_g'].describe()
+
+# 평균, 최대값, 최소값 추출
+mean_val = g_body_desc['mean']
+max_val = g_body_desc['max']
+min_val = g_body_desc['min']
+
+mean_val_a = a_body_desc['mean']
+max_val_a = a_body_desc['max']
+min_val_a = a_body_desc['min']
+
+mean_val_c = c_body_desc['mean']
+max_val_c = c_body_desc['max']
+min_val_c = c_body_desc['min']
+
+# gentoo
+print(f"Gentoo의 body_mass의 평균: {mean_val}, 최대값: {max_val}, 최소값: {min_val}")
+
+# adelie
+print(f"Adelie의 body_mass의 평균: {mean_val_a}, 최대값: {max_val_a}, 최소값: {min_val_a}")
+
+# chinstrap
+print(f"Chinstrap의 body_mass의 평균: {mean_val_c}, 최대값: {max_val_c}, 최소값: {min_val_c}")
+
+```
+
+|             | Gentoo   | Adelie   | Chinstrap |
+|-------------|----------|----------|-----------|
+| 평균 몸무게 | 5076.016 | 3700.662 | 3733.088  |
+| 최대 몸무게 | 6300     | 4775     | 4800      |
+| 최소 몸무게 | 3950     | 2850     | 2700      |
+
+### 몸무게 분석 결과
+
+-   평균,최대,최소 몸무게를 다 비교해보았을때, 가장 무거운 무게를 가진 종은 Gentoo 종이다.
+
+-   Chinstrap 종이 가장 가벼운 몸무게를 가지고 있는 것을 알 수 있다.
