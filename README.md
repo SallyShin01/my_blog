@@ -158,3 +158,73 @@ plt.legend()  # 오른쪽 위 사각형 설명
 plt.grid(True)
 plt.show()
 ```
+
+## 이모티콘 입력 방법
+
+:smile:
+
+## 코드 결과 값만 보여주는 형식
+```{python}
+# | echo: false
+
+# 소수점 결과 반올림 - round(species, ndigits = 2)
+
+```
+
+
+## 다양한 옵션 추가 
+```{python}
+#| eval: true
+#| echo: false
+print("이 코드는 실행되지만 보이지 않습니다.")
+
+```
+
+```{python}
+#| error : true
+# 의도적인 에러 발생(존재하지 않는 변수)
+print(undefined_variable)
+
+```
+
+```{python}
+#| fig-width: 3
+ #| fig-height: 5
+ #| fig-align: center
+ #| fig-cap: "사인 함수 플롯"
+
+ import numpy as np
+ import matplotlib.pyplot as plt
+ x = np.linspace(0, 10, 100)
+ y = np.cos(x)
+ plt.figure(figsize=(6, 4))
+ plt.plot(x, y, label="cos(x)", color="red")
+ plt.legend()  # 오른쪽 위 사각형 설명
+ plt.grid(True)
+ plt.show()
+```
+
+y = x^2의 그래프를 -10에서 10까지 그려보세요!
+```{python}
+#| fig-width: 3
+#| fig-height: 5
+#| fig-align: center
+#| fig-cap: "y=x^2의 그래프프"
+x = np.linspace(-10, 10, 100)
+y = x **2
+plt.figure(figsize=(6, 4))
+plt.plot(x, y, label="x^2", color="red")
+plt.legend()  # 오른쪽 위 사각형 설명
+plt.grid(True)
+plt.show()
+```
+
+## Quarto 문서 꾸미기 - html
+```{python}
+# toc : true (목차 표시)
+# number-sections : true  (자동으로 번호 부여)
+# theme : cosmo (스타일 어떤것을 하냐에 따라 배경 등이 변함)
+# code-fold : true (코드를 접어서 표현/펼쳐서 표현)
+# highlight-style : github (코드 부분이 지정한 색으로 변경경)
+# search : true (문서 내 검색 기능 활성)
+```

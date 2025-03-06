@@ -151,3 +151,13 @@ plt.legend()  # 오른쪽 위 사각형 설명
 plt.grid(True)
 plt.show()
 ```
+
+## Quarto 문서 꾸미기 - html
+```{python}
+# toc : true (목차 표시)
+# number-sections : true  (자동으로 번호 부여)
+# theme : cosmo (스타일 어떤것을 하냐에 따라 배경 등이 변함)
+# code-fold : true (코드를 접어서 표현/펼쳐서 표현)
+# highlight-style : github (코드 부분이 지정한 색으로 변경경)
+# search : true (문서 내 검색 기능 활성)
+```

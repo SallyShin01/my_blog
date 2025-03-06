@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>첫 Qmd 문서 만들기</title>
+<title>Penguin data 설명</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,46 +57,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="quarto-test_files/libs/clipboard/clipboard.min.js"></script>
-<script src="quarto-test_files/libs/quarto-html/quarto.js"></script>
-<script src="quarto-test_files/libs/quarto-html/popper.min.js"></script>
-<script src="quarto-test_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="quarto-test_files/libs/quarto-html/anchor.min.js"></script>
-<link href="quarto-test_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="quarto-test_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="quarto-test_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="quarto-test_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="quarto-test_files/libs/bootstrap/bootstrap-1bc8a17f135ab3d594c857e9f48e611b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="penguin_data_files/libs/clipboard/clipboard.min.js"></script>
+<script src="penguin_data_files/libs/quarto-html/quarto.js"></script>
+<script src="penguin_data_files/libs/quarto-html/popper.min.js"></script>
+<script src="penguin_data_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="penguin_data_files/libs/quarto-html/anchor.min.js"></script>
+<link href="penguin_data_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="penguin_data_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="penguin_data_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="penguin_data_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="penguin_data_files/libs/bootstrap/bootstrap-1bc8a17f135ab3d594c857e9f48e611b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -108,7 +79,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">첫 Qmd 문서 만들기</h1>
+<h1 class="title">Penguin data 설명</h1>
 </div>
 
 
@@ -125,175 +96,186 @@ window.Quarto = {
 </header>
 
 
-<section id="제목-1-h1" class="level1">
-<h1>제목 1 (h1)</h1>
-<p>문서를 작성한 후 아래 단축키를 누르면 <em>반영된 결과</em>를 볼 수 <del>있습니다</del>.있다.</p>
-<p><strong>Preview 단축키 : Ctrl + Shift + K</strong></p>
-<section id="제목-2-h2" class="level2">
-<h2 class="anchored" data-anchor-id="제목-2-h2">제목 2 (h2)</h2>
-<p>글 중간에 목록을 삽입하고 싶은 경우</p>
-<ul>
-<li>아이템 1</li>
-<li>아이템 2
-<ul>
-<li>서브 아이템 1<br>
-</li>
-<li>서브 아이템 2</li>
-</ul></li>
-</ul>
-<p>순서가 있는 목록을 삽입할 수 있습니다.</p>
-<ol type="1">
-<li>R 언어 패키지
-<ol type="1">
-<li>ggplot<br>
-</li>
-<li>Dplyr<br>
-</li>
-</ol></li>
-<li>파이썬 패키지
-<ol type="1">
-<li>넘파이<br>
-</li>
-<li>판다스</li>
-</ol></li>
-</ol>
-</section>
-<section id="제목-3-h3" class="level2">
-<h2 class="anchored" data-anchor-id="제목-3-h3">제목 3 (h3)</h2>
-<p>문의사항은 <a href="https://staple.com">슬기로운 통계생활</a>로 문의주세요!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://statisticsplaybook.com/wp-content/uploads/2023/09/%EC%8A%AC%ED%86%B5%EB%A1%9C%EA%B3%A0%EB%94%94%EC%9E%90%EC%9D%B8-%ED%88%AC%EB%AA%85512x512.webp" class="img-fluid figure-img"></p>
-<figcaption>슬통로고</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./슬통로고디자인.webp" class="img-fluid figure-img"></p>
-<figcaption>컴퓨터에 저장된 그림</figcaption>
-</figure>
-</div>
-<section id="표-삽입" class="level3">
-<h3 class="anchored" data-anchor-id="표-삽입">표 삽입</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>이름</th>
-<th>나이</th>
-<th>직업</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>홍길동</td>
-<td>25</td>
-<td>데이터 분석가</td>
-</tr>
-<tr class="even">
-<td>이몽룡</td>
-<td>30</td>
-<td>개발자</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="수식-입력" class="level3">
-<h3 class="anchored" data-anchor-id="수식-입력">수식 입력</h3>
-<p>문장 안에 들어가는 수식은 달러 기호 한개를 사용합니다. 이렇게 <span class="math inline">\(E=mc^2\)</span> 말이죠!</p>
-<p>만약, 수식만 따로 문단을 만들어서 보여주고 싶은 경우는 달러 기호 2개를 사용합니다.</p>
-<p><span class="math display">\[
-E=mc^2
-\]</span></p>
-<p>이렇게 말이죠!</p>
-<p><span class="math display">\[
-\begin{aligned}
-    a &amp;= b + c \\
-      &amp;= d + e + f
-\end{aligned}
-\]</span></p>
-<ul>
-<li><code>\\</code> 기호는 줄바꿈을 의미</li>
-<li><code>&amp;</code> 기호는 정렬 기준을 의미</li>
-</ul>
-</section>
-</section>
-<section id="quarto의-존재-이유" class="level2">
-<h2 class="anchored" data-anchor-id="quarto의-존재-이유">Quarto의 존재 이유</h2>
-<p>파이썬 코드 청크를 삽입할 수 있다.</p>
-<p>단축키 : <code>Ctrl + Shift + I</code></p>
-<div id="bbd3b678" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.arange(<span class="dv">10</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<pre><code>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</code></pre>
-</div>
-</div>
-</section>
-<section id="비주얼-모드에서-편집하기" class="level2">
-<h2 class="anchored" data-anchor-id="비주얼-모드에서-편집하기">비주얼 모드에서 편집하기</h2>
-<p>우리가 이렇게 <em>문장</em>을 바로 쓰면 <strong>서식이 적용</strong>되어 나옵니다.</p>
-<p><code>Ctrl + Shift + I</code></p>
-</section>
-<section id="테이블-넣기" class="level2">
-<h2 class="anchored" data-anchor-id="테이블-넣기">테이블 넣기</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Col1</th>
-<th>Col2</th>
-<th>Col3</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>항목1</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>항목2</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>항목3</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="이모티콘-입력-방법" class="level2">
-<h2 class="anchored" data-anchor-id="이모티콘-입력-방법">이모티콘 입력 방법</h2>
-<p>:smile:</p>
-</section>
-<section id="코드-결과-값만-보여주는-형식" class="level2">
-<h2 class="anchored" data-anchor-id="코드-결과-값만-보여주는-형식">코드 결과 값만 보여주는 형식</h2>
-</section>
-<section id="다양한-옵션-추가" class="level2">
-<h2 class="anchored" data-anchor-id="다양한-옵션-추가">다양한 옵션 추가</h2>
-<div id="58aec9ae" class="cell" data-execution_count="3">
+<section id="penguin-data-분석-설명---6조" class="level1">
+<h1>Penguin data 분석 설명 - 6조</h1>
+<div id="fc8e953e" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> palmerpenguins <span class="im">import</span> load_penguins</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>penguins <span class="op">=</span> load_penguins()</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>penguins.info()</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>df<span class="op">=</span>penguins</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>df</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 종별로 데이터를 나눔!</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>gentoo <span class="op">=</span> penguins[penguins[<span class="st">'species'</span>] <span class="op">==</span> <span class="st">"Gentoo"</span>] <span class="co"># 124개의 데이터</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>chinstrap <span class="op">=</span> penguins[penguins[<span class="st">'species'</span>] <span class="op">==</span> <span class="st">"Chinstrap"</span>]  <span class="co"># 68개의 데이터</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>adelie <span class="op">=</span> penguins[penguins[<span class="st">'species'</span>] <span class="op">==</span> <span class="st">"Adelie"</span>]  <span class="co"># 152개 데이터</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>이 코드는 실행되지만 보이지 않습니다.</code></pre>
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 344 entries, 0 to 343
+Data columns (total 8 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   species            344 non-null    object 
+ 1   island             344 non-null    object 
+ 2   bill_length_mm     342 non-null    float64
+ 3   bill_depth_mm      342 non-null    float64
+ 4   flipper_length_mm  342 non-null    float64
+ 5   body_mass_g        342 non-null    float64
+ 6   sex                333 non-null    object 
+ 7   year               344 non-null    int64  
+dtypes: float64(4), int64(1), object(3)
+memory usage: 21.6+ KB</code></pre>
 </div>
 </div>
-<div id="f7994150" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 의도적인 에러 발생(존재하지 않는 변수)</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(undefined_variable)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<div class="ansi-escaped-output">
-<pre><span class="ansi-red-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg ansi-bold">In[7], line 2</span>
-<span class="ansi-green-fg">      1</span> <span style="font-style:italic;color:rgb(95,135,135)"># 의도적인 에러 발생(존재하지 않는 변수)</span>
-<span class="ansi-green-fg ansi-bold">----&gt; 2</span> <span style="color:rgb(0,135,0)">print</span>(undefined_variable)
-
-<span class="ansi-red-fg ansi-bold">NameError</span>: name 'undefined_variable' is not defined</pre>
+<section id="각-종별-지느러미-분석" class="level2">
+<h2 class="anchored" data-anchor-id="각-종별-지느러미-분석">각 종별 지느러미 분석</h2>
+<div id="8a67bb1c" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># flipper_length_mm</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 'flipper_length_mm' 컬럼에 대한 describe() 결과</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>g_flipper_desc <span class="op">=</span> gentoo[<span class="st">'flipper_length_mm'</span>].describe()</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>a_flipper_desc <span class="op">=</span> adelie[<span class="st">'flipper_length_mm'</span>].describe()</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>c_flipper_desc <span class="op">=</span> chinstrap[<span class="st">'flipper_length_mm'</span>].describe()</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 평균, 최대값, 최소값 추출</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>mean_val <span class="op">=</span> g_flipper_desc[<span class="st">'mean'</span>]</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>max_val <span class="op">=</span> g_flipper_desc[<span class="st">'max'</span>]</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>min_val <span class="op">=</span> g_flipper_desc[<span class="st">'min'</span>]</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>mean_val_a <span class="op">=</span> a_flipper_desc[<span class="st">'mean'</span>]</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>max_val_a <span class="op">=</span> a_flipper_desc[<span class="st">'max'</span>]</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>min_val_a <span class="op">=</span> a_flipper_desc[<span class="st">'min'</span>]</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>mean_val_c <span class="op">=</span> c_flipper_desc[<span class="st">'mean'</span>]</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>max_val_c <span class="op">=</span> c_flipper_desc[<span class="st">'max'</span>]</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>min_val_c <span class="op">=</span> c_flipper_desc[<span class="st">'min'</span>]</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># gentoo</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Gentoo의 flipper_length의 평균: </span><span class="sc">{</span>mean_val<span class="sc">}</span><span class="ss">, 최대값: </span><span class="sc">{</span>max_val<span class="sc">}</span><span class="ss">, 최소값: </span><span class="sc">{</span>min_val<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co"># adelie</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Adelie의 flipper_length의 평균: </span><span class="sc">{</span>mean_val_a<span class="sc">}</span><span class="ss">, 최대값: </span><span class="sc">{</span>max_val_a<span class="sc">}</span><span class="ss">, 최소값: </span><span class="sc">{</span>min_val_a<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="co"># chinstrap</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Chinstrap의 flipper_length의 평균: </span><span class="sc">{</span>mean_val_c<span class="sc">}</span><span class="ss">, 최대값: </span><span class="sc">{</span>max_val_c<span class="sc">}</span><span class="ss">, 최소값: </span><span class="sc">{</span>min_val_c<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Gentoo의 flipper_length의 평균: 217.1869918699187, 최대값: 231.0, 최소값: 203.0
+Adelie의 flipper_length의 평균: 189.95364238410596, 최대값: 210.0, 최소값: 172.0
+Chinstrap의 flipper_length의 평균: 195.8235294117647, 최대값: 212.0, 최소값: 178.0</code></pre>
 </div>
 </div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Gentoo</th>
+<th>Adelie</th>
+<th>Chinstrap</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>평균 지느러미 길이</td>
+<td>217.187</td>
+<td>189.954</td>
+<td>195.824</td>
+</tr>
+<tr class="even">
+<td>최대 지느러미 길이</td>
+<td>231</td>
+<td>210</td>
+<td>212</td>
+</tr>
+<tr class="odd">
+<td>최소 지느러미 길이</td>
+<td>203</td>
+<td>172</td>
+<td>178</td>
+</tr>
+</tbody>
+</table>
+<section id="지느러미-분석-결과" class="level3">
+<h3 class="anchored" data-anchor-id="지느러미-분석-결과">지느러미 분석 결과</h3>
+<ul>
+<li><p>평균적으로 보았을때, Gentoo가 보통 가장 긴 지느러미 길이를 가지고 있다.</p></li>
+<li><p>최대 지느러미 길이 역시 Gentoo가 가지고 있다.</p></li>
+<li><p>가장 짧은 지느러미 길이를 가지고 있는 종은 Adelie이다.</p></li>
+</ul>
+</section>
+</section>
+<section id="각-종별-몸무게-분석" class="level2">
+<h2 class="anchored" data-anchor-id="각-종별-몸무게-분석">각 종별 몸무게 분석</h2>
+<div id="51eb9f10" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># body_mass_g</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>g_body_desc <span class="op">=</span> gentoo[<span class="st">'body_mass_g'</span>].describe()</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>a_body_desc <span class="op">=</span> adelie[<span class="st">'body_mass_g'</span>].describe()</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>c_body_desc <span class="op">=</span> chinstrap[<span class="st">'body_mass_g'</span>].describe()</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 평균, 최대값, 최소값 추출</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>mean_val <span class="op">=</span> g_body_desc[<span class="st">'mean'</span>]</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>max_val <span class="op">=</span> g_body_desc[<span class="st">'max'</span>]</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>min_val <span class="op">=</span> g_body_desc[<span class="st">'min'</span>]</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>mean_val_a <span class="op">=</span> a_body_desc[<span class="st">'mean'</span>]</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>max_val_a <span class="op">=</span> a_body_desc[<span class="st">'max'</span>]</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>min_val_a <span class="op">=</span> a_body_desc[<span class="st">'min'</span>]</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>mean_val_c <span class="op">=</span> c_body_desc[<span class="st">'mean'</span>]</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>max_val_c <span class="op">=</span> c_body_desc[<span class="st">'max'</span>]</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>min_val_c <span class="op">=</span> c_body_desc[<span class="st">'min'</span>]</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># gentoo</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Gentoo의 body_mass의 평균: </span><span class="sc">{</span>mean_val<span class="sc">}</span><span class="ss">, 최대값: </span><span class="sc">{</span>max_val<span class="sc">}</span><span class="ss">, 최소값: </span><span class="sc">{</span>min_val<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co"># adelie</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Adelie의 body_mass의 평균: </span><span class="sc">{</span>mean_val_a<span class="sc">}</span><span class="ss">, 최대값: </span><span class="sc">{</span>max_val_a<span class="sc">}</span><span class="ss">, 최소값: </span><span class="sc">{</span>min_val_a<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co"># chinstrap</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Chinstrap의 body_mass의 평균: </span><span class="sc">{</span>mean_val_c<span class="sc">}</span><span class="ss">, 최대값: </span><span class="sc">{</span>max_val_c<span class="sc">}</span><span class="ss">, 최소값: </span><span class="sc">{</span>min_val_c<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Gentoo의 body_mass의 평균: 5076.016260162602, 최대값: 6300.0, 최소값: 3950.0
+Adelie의 body_mass의 평균: 3700.662251655629, 최대값: 4775.0, 최소값: 2850.0
+Chinstrap의 body_mass의 평균: 3733.0882352941176, 최대값: 4800.0, 최소값: 2700.0</code></pre>
 </div>
+</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Gentoo</th>
+<th>Adelie</th>
+<th>Chinstrap</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>평균 몸무게</td>
+<td>5076.016</td>
+<td>3700.662</td>
+<td>3733.088</td>
+</tr>
+<tr class="even">
+<td>최대 몸무게</td>
+<td>6300</td>
+<td>4775</td>
+<td>4800</td>
+</tr>
+<tr class="odd">
+<td>최소 몸무게</td>
+<td>3950</td>
+<td>2850</td>
+<td>2700</td>
+</tr>
+</tbody>
+</table>
+<section id="몸무게-분석-결과" class="level3">
+<h3 class="anchored" data-anchor-id="몸무게-분석-결과">몸무게 분석 결과</h3>
+<ul>
+<li><p>평균,최대,최소 몸무게를 다 비교해보았을때, 가장 무거운 무게를 가진 종은 Gentoo 종이다.</p></li>
+<li><p>Chinstrap 종이 가장 가벼운 몸무게를 가지고 있는 것을 알 수 있다.</p></li>
+</ul>
+</section>
 </section>
 </section>
 
